@@ -1,0 +1,9 @@
+Flask
+requests
+beautifulsoup4
+builtwith
+python-nmap
+fpdf2
+pandas
+cryptography
+dnspython

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web VAPT Scanner</title>
+</head>
+<body>
+
+    <h1>Web VAPT Tool</h1>
+
+    <form method="POST">
+        <input type="text"
+               name="url"
+               placeholder="https://example.com"
+               required>
+
+        <button type="submit">Scan</button>
+    </form>
+
+    {% if results %}
+        <h2>Results</h2>
+
+        <pre>{{ results }}</pre>
+
+        <br>
+
+        <a href="/download/report.pdf">
+            Download PDF Report
+        </a>
+
+        <br><br>
+
+        <a href="/download/report.json">
+            Download JSON Report
+        </a>
+
+        <br><br>
+
+        <a href="/download/report.csv">
+            Download CSV Report
+        </a>
+    {% endif %}
+
+</body>
+</html>
